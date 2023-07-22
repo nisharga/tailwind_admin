@@ -1,4 +1,5 @@
 
+import Analytics from './Analytics/Analytics';
 import OverviewSection from './OverviewSection/OverviewSection';
 const Dashboard = () => {
   return (
@@ -7,7 +8,9 @@ const Dashboard = () => {
             <div className="basis-3/12">
                 <OverviewSection/>
             </div>
-            <div className="basis-7/12">02</div>
+            <div className="basis-7/12">
+              <Analytics/>
+            </div>
             <div className="basis-2/12">03</div>
         </div>
     </div>
