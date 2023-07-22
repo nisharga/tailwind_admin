@@ -14,34 +14,31 @@ const BalanceDetails = () => {
 
   return (
     <div className="pl-5 pt-5">
-      <h4 className="text-sm">Today</h4> 
-      <div className="">
+      <h4 className="text-sm font-bold">Today</h4> 
+      <div className="my-3">
         <h2 className="text-2xl font-bold">$<span>19,892</span></h2>
         <h4 className="text-md text-[#C5C5C5] ">Account Balance</h4> 
       </div>
-      <div className="">
+      <div className="my-3">
         <h3 className="text-1xl font-bold">$<span>4000</span></h3>
         <h4 className="text-md text-[#C5C5C5]">Year-To-Date Contribution</h4> 
       </div>
-      <div className="">
+      <div className="my-3">
         <h3 className="text-1xl font-bold">$<span>1892</span></h3>
         <h4 className="text-md text-[#C5C5C5] ">Total Interest</h4> 
       </div>
+      <div className="mt-5">
       <select
         value={selectedOption}
         onChange={handleOptionChange}
-        className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
+        className="bg-blue-700 hover:bg-blue-900
+         text-white font-bold py-3 px-5 rounded"
       >
         <option value="">I want to</option>
-        <option value="Option 1">Option 1</option>
-        <option value="Option 2">Option 2</option>
+        <option value="Diposit">Diposit</option>
+        <option value="Withdrawal">Withdrawal</option>
       </select>
-      
-
-
-       
-
-
+      </div>
     </div>
   )
 }

@@ -4,11 +4,11 @@ const Dashboard = () => {
   return (
     <div>
         <div className="flex flex-row">
-            <div className="basis-1/5">
+            <div className="basis-3/12">
                 <OverviewSection/>
             </div>
-            <div className="basis-1/3">02</div>
-            <div className="basis-1/4">03</div>
+            <div className="basis-7/12">02</div>
+            <div className="basis-2/12">03</div>
         </div>
     </div>
   )

@@ -1,7 +1,7 @@
 import profileImg from "../../../../Asset/profile.jpg";
 const Profile = () => {
   return (
-    <div className="flex justify-center align-middle">
+    <div className="flex align-middle pl-5 pt-5">
        <div className="">
             <img src={profileImg} alt="profileImg" 
             className="w-[70px] rounded-full "/>
