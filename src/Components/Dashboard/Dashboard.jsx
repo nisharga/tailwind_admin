@@ -1,17 +1,24 @@
 
 import Analytics from './Analytics/Analytics';
 import OverviewSection from './OverviewSection/OverviewSection';
+import Strategy from './Strategy/Strategy';
 const Dashboard = () => {
   return (
     <div>
-        <div className="flex flex-row">
-            <div className="basis-3/12">
+      {/* flex flex-row */}
+        <div className="grid grid-rows-4 grid-cols-4 gap-1">
+        {/* basis-3/12 */}
+            <div className="">
                 <OverviewSection/>
             </div>
-            <div className="basis-7/12">
+            {/* basis-6/12 */}
+            <div className="col-span-2">
               <Analytics/>
             </div>
-            <div className="basis-2/12">03</div>
+            {/* basis-3/12 */}
+            <div className="">
+              <Strategy/>
+            </div>
         </div>
     </div>
   )

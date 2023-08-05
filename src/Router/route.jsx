@@ -8,7 +8,23 @@ export const router = createBrowserRouter([
       element: <Main />,
       children: [
         {
-          path: "/register",
+          path: "/",
+          element: <Dashboard/>,
+        },
+        {
+          path: "/analisis",
+          element: <Dashboard/>,
+        },
+        {
+          path: "/overview",
+          element: <Dashboard/>,
+        },
+        {
+          path: "/profile",
+          element: <Dashboard/>,
+        },
+        {
+          path: "/search",
           element: <Dashboard/>,
         },
       ],
