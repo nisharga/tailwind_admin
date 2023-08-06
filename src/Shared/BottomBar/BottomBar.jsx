@@ -6,8 +6,8 @@ import { CgProfile } from "react-icons/cg";
 import { FaSearch } from "react-icons/fa";
 const BottomBar = () => {
   return (
-    <div className="w-[100%] bg-slate-50 p-2 flex justify-center">
-        <div className="flex">
+    <div className="fixed bottom-0 right-0 mt-4 md:hidden bg-slate-50 w-[100%]">
+        <div className="flex justify-center">
         <CustomLinks to="/">
          <GrHomeRounded color="white"/>
          </CustomLinks>

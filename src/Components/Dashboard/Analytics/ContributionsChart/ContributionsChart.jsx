@@ -1,4 +1,4 @@
-import { Bar, BarChart, CartesianGrid, Legend, Tooltip, XAxis, YAxis } from "recharts";
+import { Bar, BarChart, ResponsiveContainer, CartesianGrid, Legend, Tooltip, XAxis, YAxis } from "recharts";
 
 const ContributionsChart = () => {
   const data = [
@@ -48,9 +48,11 @@ const ContributionsChart = () => {
   ];
   
   return (
-    <div>
+    <div className="">
+       <ResponsiveContainer aspect={1.2}>
        <BarChart
-      width={500}
+       // 400, 320
+      width={320}
       height={300}
       data={data}
       margin={{
@@ -68,7 +70,8 @@ const ContributionsChart = () => {
       <Bar dataKey="Employee" stackId="a" fill="#4935FF" />
       <Bar dataKey="Total_Interest" stackId="a" fill="#85AFFF" /> {/* New data series */}
       <Legend  />
-    </BarChart>
+      </BarChart>
+      </ResponsiveContainer>
     </div>
   )
 }

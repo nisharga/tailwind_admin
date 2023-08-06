@@ -4,7 +4,7 @@ import RecentTransactions from "./RecentTransactions/RecentTransactions"
 
 const OverviewSection = () => {
   return (
-    <div className="bg-[#FAFAFA] h-screen pt-5">
+    <div className="h-screen pt-5">
         <Profile/>
         <BalanceDetails/>
         <RecentTransactions/>

@@ -2,7 +2,7 @@ import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 const Counter = () => {
   return (
-    <div className="flex justify-center content-center">
+    <div className="flex md:justify-center content-center">
         <div className="w-[100px] p-2">
             <CircularProgressbar 
             value = {78} 

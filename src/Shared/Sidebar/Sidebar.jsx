@@ -15,7 +15,7 @@ import CustomLinks from './../CustomLink/CustomLinks';
 const Sidebar = () => {
   
   return (
-    <div className="bg-[#ffffff] h-[100%] grid content-between">
+    <div className="bg-[#ffffff] h-[100%] grid content-between lg:fixed">
       <div>
       <div className="">
         <Link className="logo">

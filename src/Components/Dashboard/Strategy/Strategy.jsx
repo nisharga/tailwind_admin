@@ -81,12 +81,15 @@ const Strategy = () => {
         onClick={handleClick}>Update</button> 
       </div>
 
-         <Link to='/' className="flex justify-center content-center text-center">
-          <div className="mr-2 text-[#0000ff]">View Help Doc</div> 
-          <div className="mt-1.5 text-[#0000ff]"><LiaGreaterThanSolid /></div>
+         <Link to='/' className="hidden lg:block justify-center content-center text-center">
+          <div className="mr-2 text-[#0000ff]">
+            <span>View Help Doc</span>
+            <span className="mt-1.5 text-[#0000ff] absolute"><LiaGreaterThanSolid /></span>  
+          </div> 
+          
          </Link>
       </div>
-       <div className="mt-4">
+       <div className="mt-4 hidden lg:block">
        <HousingAdvance/>
        </div>  
       
